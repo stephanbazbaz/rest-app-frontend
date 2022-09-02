@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0 0 100px 0;
+  font-family: Quicksand;
+}
+
+@import './assets/styles/fonts';
+@import './assets/styles/functions';
+@import './assets/styles/globalTags';
+@import './assets/styles/classes';
+@import './assets/styles/extends';
+@import './assets/styles/colors';
+@import'./assets/styles/mixing';
+
+.swiper-pagination{
+    display: none;
+}
+
+.swiper-slide{
+    overflow: hidden !important;
+  }

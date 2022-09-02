@@ -1,0 +1,23 @@
+<header>
+  <nav class="flex-center navbar">
+    <div class="nav-items-left flex-center">
+      <div class="logo-warp flex-center">
+        <img alt="menu-icon" src={{this.iconsService.hamburgerIcon}} class="hamburger-icon" />
+        <img alt="epicure-logo" src={{this.iconsService.cutleryLogo}} class="cutlery-icon" routerLink='homepage' />
+        <a class="nav-item epicure" routerLink='homepage'>EPICURE</a>
+      </div>
+      <a *ngFor="let item of this.navLinksArr" class="nav-item nav-link" 
+        [routerLink]="item.to" routerLinkActive='active'>{{item.name}}</a>
+    </div>
+    <div class="nav-items-right flex-center">
+      <div class="nav-item search-content">
+        <div class="search-warp">
+          <app-search-bar></app-search-bar>
+          <img alt="search-icon" class="search-icon" src={{this.iconsService.serachIconLogo}} />
+        </div>
+      </div>
+     <a routerLink='' class="nav-item"> <img alt="profile-icon" class="nav-icon" src={{this.iconsService.profileLogo}} (click)='this.globalService.logOut()'/></a>
+     <a routerLink='homepage' class="nav-item"> <img alt="cart-icon" class="nav-icon" src={{this.iconsService.bagIcon}}  /></a>
+    </div>
+  </nav>
+</header>

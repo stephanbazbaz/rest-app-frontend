@@ -1,0 +1,21 @@
+$mobile-breakpoint:728px;
+$screen-1000-breakpoint:1100px;
+$scren-1440-breakpoint:1440px ;
+
+@mixin for-mobile-layout {
+  @media (max-width: $mobile-breakpoint) {
+    @content;
+  }
+}
+
+@mixin screen-1000-layout {
+  @media (max-width: $screen-1000-breakpoint) {
+    @content;
+  }
+}
+
+@mixin screen-1440-layout {
+  @media (max-width: $scren-1440-breakpoint) {
+    @content;
+  }
+}

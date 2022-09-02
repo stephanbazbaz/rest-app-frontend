@@ -1,0 +1,9 @@
+<div class="icons-container">
+  <h1 class="t-center our-icons-title">THE MEANING OF OUR ICONS :</h1>
+  <div class="flex icons-row">
+    <div *ngFor="let item of ourIconsArr" class="flex-Col">
+      <img alt={{item.alt}} class="icon-img" src={{item.img}} />
+      <h2 class="icon-type">{{item.type}}</h2>
+    </div>
+  </div>
+</div>
